@@ -16,3 +16,53 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  width: 80%;
+  padding: 10px;
+}
+
+.search-form button {
+  padding: 10px 15px;
+}
+
+.loader {
+  display: none;
+  /* Потрібно додати анімацію для індикатора завантаження */
+}
+
+.loader.is-active {
+  display: block;
+  /* Тут може бути CSS-анімація для індикатора завантаження */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.photo-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info-item {
+  margin: 5px 0;
+}
