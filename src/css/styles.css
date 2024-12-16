@@ -19,12 +19,11 @@
 
 .search-form {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .search-form input {
-  width: 80%;
   padding: 10px;
 }
 
@@ -32,37 +31,56 @@
   padding: 10px 15px;
 }
 
-.loader {
-  display: none;
-  /* Потрібно додати анімацію для індикатора завантаження */
-}
-
-.loader.is-active {
-  display: block;
-  /* Тут може бути CSS-анімація для індикатора завантаження */
-}
-
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 .photo-card {
   background-color: white;
-  border-radius: 8px;
   overflow: hidden;
+  max-width: 360px;
+  height: 200px;
 }
 
 .photo-card img {
   width: 100%;
-  height: auto;
+  height: 152px;
+  object-fit: cover;
 }
 
 .info {
-  padding: 10px;
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  padding: 4px;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-right: 1px solid #808080;
+  width: 100%;
+  z-index: 999;
 }
 
 .info-item {
-  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.info-content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }

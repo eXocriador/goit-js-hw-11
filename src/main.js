@@ -25,7 +25,7 @@ searchForm.addEventListener('submit', function(e) {
     iziToast.error({ message: 'Please enter a search query!' });
     return;
   }
-  
+
   currentQuery = query;
   page = 1;
   loader.classList.add('is-active'); // Показати індикатор завантаження
@@ -42,3 +42,5 @@ searchForm.addEventListener('submit', function(e) {
       loader.classList.remove('is-active'); // Приховати індикатор завантаження
     });
 });
+
+
