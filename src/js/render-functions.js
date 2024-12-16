@@ -1,6 +1,6 @@
 export function renderImages(images) {
   const gallery = document.querySelector('.gallery');
-  gallery.innerHTML = ''; // Очистити попередні зображення
+  gallery.innerHTML = ''; 
 
   images.forEach(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) => {
     const card = document.createElement('li');

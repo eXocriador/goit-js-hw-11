@@ -28,7 +28,7 @@ searchForm.addEventListener('submit', function(e) {
 
   currentQuery = query;
   page = 1;
-  loader.classList.add('is-active'); // Показати індикатор завантаження
+  loader.classList.add('is-active');
 
   fetchImages(query, page)
     .then(function(images) {
@@ -39,7 +39,7 @@ searchForm.addEventListener('submit', function(e) {
       iziToast.error({ message: 'Sorry, no images found. Please try again!' });
     })
     .finally(function() {
-      loader.classList.remove('is-active'); // Приховати індикатор завантаження
+      loader.classList.remove('is-active');
     });
 });
 
